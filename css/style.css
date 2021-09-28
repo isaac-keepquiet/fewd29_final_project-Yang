@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+body {
+  /* font-family: 'Cabin', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  max-width: 100%;
+}
+
+header{
+  /* background-color: #06748a; */
+  /* 此颜色用来表示宽度 */
+}
+
+p {
+  line-height: 1.5;
+  /* color: #FF0000;
+  font-size: 58px; */
+}
+
+.title,
+.eafe-header-text{
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Gluten', cursive;
+}
+
+.eafe-header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+}
+
+.eafe-header-image{
+  height: 60px;
+  margin-right: 25px;
+  /* font-size: 60px; */
+}
+
+.eafe-header-text{
+  color: #06748a;
+  font-size: 58px;
+}
+
+.logo-text{
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .logo-text{
+    display: block;
+  }
+  .logo-pic{
+    display: none;
+  }
+}
+
+.eafe-header-link{
+  /* height: 60px;
+  width: 80px;
+  background-color: #06748a;
+  display: flex;
+  align-items: center; */
+  display: inline-block;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+  margin: 0 12px;
+  transition: .3s ease-in-out;
+}
+
+.eafe-header-left,
+.eafe-header-right{
+  display: flex;
+  align-items: center;
+}
+
+.eafe-header-link:hover{
+  color:#06748a;
+}
+
+@media (max-width:1100px) {
+  .eafe-header-link{
+    display:none;
+  }
+}
+
+.eafe-header-small-screen{
+  display:block;
+}
+
+@media (min-width:1100px) {
+  .eafe-header-small-screen{
+    display:none;
+  }
+}
+
+.menu{
+  font-size: 18px;
+  border: 2px solid #06748a;
+  border-radius: 30px;
+  background-color: rgba(255,255,255,.9);
+  display: none;
+  padding: 15px;
+  position: absolute;
+  right: 30px;
+  top: 60px;
+  width: 200px;
+  z-index: 10;
+  /* transition: .3s ease-in-out; */
+  }
+
+
+.menulist{
+  list-style: none;
+}
+
+.menulist li a {
+  color: #454545;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+}
+
+.menulist li a:hover {
+  color: #06748a;
+}
+
+.show {
+  display: block;
+}
+
+
+/* EAFE Hero Container */
+.eafe-hero-container{
+  text-align: center;
+  color: #06748a;
+  font-size: 20px;
+}
+
+.eafe-hero-p{
+  font-family: 'Cabin', sans-serif;
+}
+
+@media (min-width: 1000px) {
+  .eafe-hero-container{
+    text-align: center;
+    background-image: url('../img/Hero.png');
+    background-border-radius: 20px;
+    position: relative;
+    background-size: cover;
+    height: 300px;
+    font-size: 16px;
+    color: #000000;
+  }
+  .eafe-hero-box{
+    border: 3px solid #FFFFFF;
+    border-radius: 20px;
+    height: 150px;
+    width: 350px;
+    background-color: rgba(255,255,255,.7);
+    position: absolute;
+    right:300px;
+  }
+}
+@media (min-width:800px) {
+
+    /* line-height: 1.2; */
+  }
+}
+
+
+/* EAFE aim contanner */
+.eafe-aim{
+  /* border: 3px solid #06748a;
+  border-radius: 20px; */
+
+}
+
+.eafe-aim h1{
+  text-align: center;
+}
+
+.eafe-aim p{
+
+  margin: auto 20px;
+  text-align: left;
+}
+
+.eafe-aim-grid{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+  padding:15px;
+}
+
+.eafe-aim-boxes{
+  border: 2px solid #06748a;
+  height: 70px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .eafe-aim-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    /* padding:15px; */
+  }
+}
+
+@media (max-width: 408px) {
+  .eafe-aim-boxes{
+    border: 2px solid #06748a;
+    height: 95px;
+    border-radius: 10px;
+  }
+}
+
+
+.eafe-strategies-button{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.eafe-strategies-title{
+  text-align: center;
+}
+
+.eafe-strategies-p{
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.eafe-strategies-show{
+  /* width: 100%; */
+  height: 70px;
+  padding: 10px;
+  border: 3px solid #06748a;
+  border-radius: 10px;
+  /* margin:  */
+}
+
+@media (max-width: 665px) {
+  .eafe-strategies-show{
+    /* width: 100%; */
+    height: 80px;
+    padding: 10px;
+    border: 3px solid #06748a;
+    border-radius: 10px;
+    /* margin:  */
+  }
+}
+
+.strategies-button{
+  color:  #000000;
+  list-style: none;
+  background-color: #06748a;
+  border-radius: 17px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  height: 15px;
+  width: 15px;
+  transition: 1s ease-in-out;
+}
+
+.strategies-button:hover{
+  background-color: #00008B;
+  color: #F0FFFF;
+}
+
+
+/* footer Container */
+
+.signup-container h3{
+  text-align: center;
+}
+
+.eafe-footer-item-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin: 50px 0px 30px 30px;
+}
+
+@media (max-width: 800px) {
+  .eafe-footer-item-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px 0px 30px 30px;
+  }
+}
+
+.eafe-footer-title{
+  text-align: center;
+  /* gap-bottom: 50px; */
+}
+
+.signup-container{
+    background-color: #06748a;
+    color: #fff;
+    height: 150px;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.signup-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0 12px; */
+}
+
+@media (max-width:1050px) {
+  .signup-container{
+      background-color: #06748a;
+      color: #fff;
+      /* width: 300px; */
+      height: 300px;
+      padding: 30px 20px;
+      border-radius: 10px;
+  }
+  .signup-info{
+    display: flex;
+    flex-direction: column;
+  }
+  .signup-input{
+    text-align: center;
+    padding: 5px 0;
+  }
+}
+
+.signup-input{
+  margin: 0 20px;
+}
+
+.submit{
+  /* border: 1px solid #06748a; */
+  border-radius: 10px;
+  background-color: #fff;
+  height: 50px;
+  width: 100px;
+  /* font-size: 20px; */
+  transition: .3s ease-in-out;
+  /* align-items: center; */
+}
+
+.submit:hover{
+  font-size: 20px;
+  color: #06748a;
+}
+
+.submit p{
+  margin: 0;
+  text-align: center;
+}
+
+.submit-button{
+  display:flex;
+  justify-content:center;
+  margin: 20px auto;
+}
+
+
+
+.eafe-footer-item{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@media (max-width: 800px) {
+  .eafe-footer-item{
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.icon{
+  height: 100px;
+  /* width: 100px; */
+}
+
+.eafe-footer-item-container a {
+  color: #06748a;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.eafe-footer-item-container a:hover{
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+}
