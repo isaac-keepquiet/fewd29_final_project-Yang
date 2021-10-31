@@ -4,7 +4,7 @@ body {
   font-family: 'Roboto', sans-serif;
   max-width: 100%;
 }
-
+/*上传测试*/
 header{
   /* background-color: #06748a; */
   /* 此颜色用来表示宽度 */
@@ -167,7 +167,7 @@ p {
 
     /* line-height: 1.2; */
   }
-}
+
 
 
 /* EAFE aim contanner */
